@@ -1,0 +1,354 @@
+
+html, body {
+    font-family: 'Oswald', sans-serif;
+    background: #0f0f0f;
+    margin: 0;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    text-align: center;
+}
+
+#logo > img {
+    max-height: 100px;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2.5%;
+    width: auto;
+}
+
+#bigScreenImage > img {
+    display: none;
+}
+
+header > .bigScreen {
+    display: none;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+
+.topnav #links {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    top: 0;
+}
+
+main {
+    width: 100%;
+    padding-top: 160px;
+}
+
+.mainSections {
+    height: 600px;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+}
+
+.mainSections h2 {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 30px;
+    margin-bottom: 0;
+}
+
+.fadeIn {
+    opacity: 0;
+}
+
+#restaurantSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurants {
+    height: 33.3%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.restaurants:hover {
+    transition: 0.6s;
+    background-color: #373737;
+}
+
+.restaurants h3 {
+    font-size: 36px;
+}
+
+.restaurants p {
+    font-size: 24px;
+}
+
+.restaurants > a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+#findSection {
+    /*background: url(images/back1.jpg);*/
+    background-size: cover;
+    height: 600px;
+}
+
+#textSection {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+    font-size: 16px;
+    text-align: center;
+}
+
+#textSection > h3 {
+    margin-bottom: 0;
+}
+
+#textSection > p {
+    margin-top: 0;
+}
+
+#imgSection {
+    height: auto;
+    float: right;
+    width: 40%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#imgSection > img {
+    float: right;
+    max-height: 80%;
+    max-width: 100%;
+    border-radius: 40px;
+    margin-top: 7.5%;
+} 
+
+#aboutSection {
+    /*background: url(images/back2.jpg);*/
+    background-size: cover;
+}
+
+#thirdSection {
+    /*background: url(images/back3.jpg);*/
+    background-size: cover;
+}
+
+footer {
+    padding: 20px;
+    width: 100%;
+}
+
+#socialMedia {
+    display: flex;
+    justify-content: center;
+}
+
+#socialMedia > .fa {
+    padding: 20px;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+#socialMedia > .fa:hover {
+    transition: 0.6s;
+    background: #808080;
+    color: #fff;
+}
+
+.fa-facebook {
+    background: #fff;
+    color: #000;
+}
+
+.fa-instagram {
+    background: #fff;
+    color: #000;
+}
+
+.footerSections > p {
+    margin: 10px;
+    color: #fff;
+}
+
+.footerSections > p > strong {
+    font-size: 22px;
+}
+
+#contact {
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact a:hover {
+    transition: 0.6s;
+    color: #808080;
+}
+
+/* Small interface */
+@media (max-width: 550px) {
+
+    #findSection#textSection p {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 790px) {
+
+    #findSection {
+        display: inline-block;
+        height: auto;
+    }
+
+    #textSection {
+        width: 100%;
+        margin: 0;
+    }
+
+    #imgSection {
+        margin: 0;
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #imgSection > img {
+        width: 60%;
+    }
+
+}
+
+    /* Desktop interface */
+@media (min-width: 992px) {
+
+    header {
+        display: flex;
+        height: 70px;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    main {
+        padding-top: 70px;
+    }
+
+    #restaurantSection {
+        flex-direction: row;
+        height: 90vh;
+    }
+
+    .restaurants {
+        height: 100%;
+    }
+
+    #bigScreenImage > img {
+        display: block;
+        max-height: 50px;
+        padding: 10px;
+        margin-left: 40px;
+    }
+
+    ul.bigScreen {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        width: 100%;
+    }
+
+        ul.bigScreen#baba {
+            width: 20%;
+            float: right;
+        }
+
+        ul.bigScreen > li > a {
+            text-decoration: none;
+            color: #fff;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        ul.bigScreen > li > a:hover {
+            transition: 0.6s;
+            color: #808080;
+        }
+
+        #findSection {
+            height: 900px;
+        }
+
+        #textSection {
+            font-size: 28px;
+        }
+
+        .smallScreen {
+            display: none;
+        }
+
+        footer {
+            height: 150px;
+            display: flex;
+        }
+
+        .footerSections {
+            margin: auto;
+        }
+
+        #contact {
+            width: 50%;
+            float: right;
+            text-align: center;
+        }
+
+        #socialMedia {
+            width: 50%;
+        }
+    }
