@@ -127,7 +127,12 @@ main {
 
 .restaurants > a:hover  {
     transition: 0.6s;
+    background: #fff;
     opacity: 0.5;
+}
+
+.restaurants > a:hover > h3 {
+    color: #000;
 }
 
 .restaurants > a {
@@ -362,6 +367,9 @@ footer > #socialMedia {
 
     footer {
         flex-direction: column;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     footer > .footerSections {
