@@ -12,99 +12,94 @@
 </head>
 <body>
     <header>
-        <div id="logo">
+        <div id="logoImage">
             <img src="images/logo.png" />
         </div>
-
-        <div class="topnav">
-            <div id="links">
-                <a id="0" href="#order" onclick="onLinkClick(this.id)">Beställ</a>
-                <a id="1" href="#find" onclick="onLinkClick(this.id)">Hitta till oss</a>
-                <a id="2" href="#about" onclick="onLinkClick(this.id)">Om oss</a>
+        <div class="buttonSection">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a id="0" href="#order" onclick="onLinkClick(this.id)">BESTÄLL</a>
+                    <a id="1" href="#find" onclick="onLinkClick(this.id)">OM OSS</a>
+                    <a id="2" href="#about" onclick="onLinkClick(this.id)">CATERING</a>
+                    <a id="3" href="#about" onclick="onLinkClick(this.id)">HITTA OSS</a>
+                    <a id="4" href="#about" onclick="onLinkClick(this.id)">FÖRETAG</a>
+                    <a id="5" href="#about" onclick="onLinkClick(this.id)">FÖLJ OSS</a>
+                    <a id="6" href="#about" onclick="onLinkClick(this.id)">JOBBA HOS OSS</a>
+                </div>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="showLinks()">
-                <i class="fa fa-bars"></i>
-            </a>
         </div>
-</header>
+    </header>
     <main>
-    <div class="mainSections" id="restaurantSection">
-        <div class="restaurants" id="live">
-            <a href="https://web.trueapp.se/sushido/store2/">
-                <h3>Malmö Live</h3>
-                <p>Gibraltargatan 3</p>
-            </a>
-        </div>
-        <div class="restaurants" id="rorsjo">
-            <a href="https://web.trueapp.se/sushido/store1/">
-                <h3>Rörsjöstaden</h3>
-                <p>Föreningsgatan 43</p>
-            </a>
-        </div>
-        <div class="restaurants" id="slott">
-            <a href="https://web.trueapp.se/sushido/store3/">
-                <h3>Slottstaden</h3>
-                <p>Skvadronsgatan 14</p>
-            </a>
-        </div>
-    </div>
-    <div class="mainSections" id="findSection">
-            <h2 class="fadeIn">Hitta till oss</h2>
-            <div id="textSection">
-                <h3 class="fadeIn">Rörsjöstaden</h3>
-                <p class="fadeIn">
-                    Mån-Tors: 11:30-20:00<br />
-                    Fre: 11:30-21:00<br />
-                    Lör: 13:00-21:00<br />
-                    Sön: 13:00-20:00
-                </p>
-                <h3 class="fadeIn">Slottstaden</h3>
-                <p class="fadeIn">
-                    Mån-Tors: 16:00-20:00<br />
-                    Fre-Lör: 13:00-21:00<br />
-                    Sön: 13:00-20:00
-                </p>
-                <h3 class="fadeIn">Malmö Live</h3>
-                <p class="fadeIn">
-                    Mån-Fre: 11:00-14:00<br />
-                    Lör: Stängt<br />
-                    Sön: Stängt
-                </p>
+        <div class="mainSections" id="restaurantSection">
+            <div class="restaurants" id="live">
+                <a href="https://web.trueapp.se/sushido/store2/">
+                    <h3>MALMÖ LIVE</h3>
+                </a>
             </div>
-            <div id="imgSection">
-                <img src="images/map.jpg" alt="Map of Malmö"/>
+            <div class="restaurants" id="rorsjo">
+                <a href="https://web.trueapp.se/sushido/store1/">
+                    <h3>RÖRSJÖSTADEN</h3>
+                </a>
+            </div>
+            <div class="restaurants" id="slott">
+                <a href="https://web.trueapp.se/sushido/store3/">
+                    <h3>SLOTTSTADEN</h3>
+                </a>
             </div>
         </div>
-    <div class="mainSections" id="aboutSection">
-        <h2 class="fadeIn">Om Sushido</h2>
-        <div id="textSection">
-            <h3 class="fadeIn">Rörsjöstaden</h3>
-            <p class="fadeIn">
-                Mån-Tors: 11:30-20:00<br />
-                Fre: 11:30-21:00<br />
-                Lör: 13:00-21:00<br />
-                Sön: 13:00-20:00
-            </p>
-            <h3 class="fadeIn">Slottstaden</h3>
-            <p class="fadeIn">
-                Mån-Tors: 16:00-20:00<br />
-                Fre-Lör: 13:00-21:00<br />
-                Sön: 13:00-20:00
-            </p>
-            <h3 class="fadeIn">Malmö Live</h3>
-            <p class="fadeIn">
-                Mån-Fre: 11:00-14:00<br />
-                Lör: Stängt<br />
-                Sön: Stängt
-            </p>
+        <div class="mainSections centerContent" id="aboutSection">
+            <div class="imgSection"></div>
+            <div class="textSection">
+                <h1 class="fadeIn">OM<br />OSS</h1>
+                <p class="fadeIn">BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
+            </div>
         </div>
-        <div id="imgSection">
-            <img src="images/map.jpg" alt="Map of Malmö" />
+        <div class="mainSections fullSection centerContent" id="cateringSection">
+            <div class="textSection">
+                <p class="fadeIn">BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
+                <h1 class="fadeIn">
+                    CATE<br />
+                    RING
+                </h1>
+            </div>
         </div>
-    </div>
-        <!-- Bör förmodligen bli en egen sida -->
-        <div class="mainSections" id="thirdSection">
-             <h2>Bli fakturakund</h2>
+        <div class="mainSections centerContent" id="findSection">
+            <div class="imgSection"></div>
+            <div class="textSection">
+                <h1 class="fadeIn">HITTA<br />OSS</h1>
+                <p class="fadeIn">BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
+            </div>
+        </div>
+        <div class="mainSections fullSection centerContent" id="companySection">
+            <div class="textSection">
+                <p class="fadeIn">BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
+                <h1 class="fadeIn">
+                    FÖ<br />
+                    RE<br />
+                    TAG
+                </h1>
+            </div>
+        </div>
+
+        <div class="mainSections centerContent" id="followSection">
+            <div class="imgSection"></div>
+            <div class="textSection">
+                <h1 class="fadeIn">FÖLJ<br />OSS</h1>
+                <p class="fadeIn">BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
+            </div>
+        </div>
+        <div class="mainSections fullSection centerContent" id="workSection">
+            <div class="textSection">
+                <p class="fadeIn">BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
+                <h1 class="fadeIn">
+                    JOBBA<br />
+                    HOS<br />
+                    OSS
+                </h1>
+            </div>
         </div>
     </main>
 
@@ -123,8 +118,11 @@
                 <a href="mailto:kontakt@sushido.se">kontakt@sushido.se</a>
             </p>
         </div>
+        <!--        
+        <div id="copyright">
+            <p>© Sushido AB</p>
+        </div>-->
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
