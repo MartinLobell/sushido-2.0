@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'sushiFont';
+    src: url('fonts/sushiFont.otf')
+}
+
 html, body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'sushiFont', sans-serif;
     background: #131313;
     margin: 0;
     color: #fff;
