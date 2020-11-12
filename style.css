@@ -20,7 +20,7 @@ header {
 
 header > #logoImage {
     height: 100%;
-    width: 50%;
+    width: 20%;
     float: left;
 }
 
@@ -31,13 +31,44 @@ header > #logoImage > img {
     float: left;
 }
 
+    /* Menu */
+
+header > nav > ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 100px;
+}
+
+header > nav > ul > li {
+    height: 70px;
+    display: inline-block;
+}
+
+header > nav > ul > li > a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 26px 16px;
+}
+
+header > nav > ul > li > a:hover {
+    transition: 0.6s;
+    color: #808080;
+}
+
+/* Menu end */
+
 /* Hamburger menu */
 
 .buttonSection {
     height: 100%;
     width: 50%;
     float: right;
-    display: inline-block;
+    display: none;
 }
 
 .dropbtn {
@@ -77,10 +108,6 @@ header > #logoImage > img {
 
 .dropdown-content a:hover {
     background-color: #f1f1f1
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 .dropbtn:hover {
@@ -143,10 +170,9 @@ main {
 
 .restaurants > a {
     width: 100%;
-    text-align: center;
-    text-decoration: none;
     color: #fff;
     position: relative;
+    text-decoration: none;
 }
 
 .restaurants > a > h3 {
@@ -189,8 +215,13 @@ main {
     font-weight: lighter;
     width: 40%;
     border-right: solid 10px #fff;
-    line-height: 1.2;
-    padding: 5%;
+    line-height: 1;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#withUs {
+    font-size: 6vw;
 }
 
 .textSection > p {
@@ -335,10 +366,25 @@ footer > #socialMedia {
     color: #808080;
 }
 
+@media (max-width: 1130px) {
+
+    nav {
+        display: none;
+    }
+
+    .buttonSection {
+        display: inline-block;
+    }
+}
+
 @media (max-width: 992px) {
 
     header {
         display: flex;
+    }
+
+    header > #logoImage {
+        width: 50%;
     }
 
     .fullSection > .textSection {
@@ -369,6 +415,10 @@ footer > #socialMedia {
         width: 100%;
         position: absolute;
         margin: 0;
+    }
+
+    #withUs {
+        font-size: 10vw;
     }
 
     footer {

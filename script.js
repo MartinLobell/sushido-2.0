@@ -14,6 +14,15 @@ $(document).ready(function () {
     });
 });
 
+function showLinks() {
+    var x = document.getElementsByClassName('dropdown-content');
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
 function onLinkClick(clickedId) {
     document.getElementsByClassName('mainSections')[clickedId].scrollIntoView();
 }

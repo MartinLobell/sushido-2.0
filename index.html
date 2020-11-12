@@ -15,9 +15,20 @@
         <div id="logoImage">
             <img src="images/logo.png" />
         </div>
+        <nav>
+            <ul>
+                <li><a id="0" href="#order" onclick="onLinkClick(this.id)">BESTÄLL</a></li>
+                <li><a id="1" href="#find" onclick="onLinkClick(this.id)">OM OSS</a></li>
+                <li><a id="2" href="#about" onclick="onLinkClick(this.id)">CATERING</a></li>
+                <li><a id="3" href="#about" onclick="onLinkClick(this.id)">HITTA OSS</a></li>
+                <li><a id="4" href="#about" onclick="onLinkClick(this.id)">FÖRETAG</a></li>
+                <li><a id="5" href="#about" onclick="onLinkClick(this.id)">FÖLJ OSS</a></li>
+                <li><a id="6" href="#about" onclick="onLinkClick(this.id)">JOBBA HOS OSS</a></li>
+            </ul>
+        </nav>
         <div class="buttonSection">
             <div class="dropdown">
-                <button class="dropbtn">
+                <button class="dropbtn" onclick="showLinks()">
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="dropdown-content">
@@ -77,8 +88,7 @@
             <div class="textSection">
                 <p class="fadeIn">BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
                 <h1 class="fadeIn">
-                    FÖ<br />
-                    RE<br />
+                    FÖRE<br />
                     TAG
                 </h1>
             </div>
@@ -95,9 +105,10 @@
             <div class="textSection">
                 <p class="fadeIn">BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA</p>
                 <h1 class="fadeIn">
-                    JOBBA<br />
-                    HOS<br />
-                    OSS
+                    <span id="withUs">
+                        JOBBA<br />
+                        HOS OSS
+                    </span>
                 </h1>
             </div>
         </div>
