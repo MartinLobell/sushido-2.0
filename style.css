@@ -52,7 +52,7 @@ header > nav > ul > li > a {
     color: #fff;
     text-decoration: none;
     text-align: center;
-    padding: 26px 16px;
+    padding: 27px 16px 0;
 }
 
 header > nav > ul > li > a:hover {
@@ -220,7 +220,8 @@ main {
     padding-right: 5%;
 }
 
-#withUs {
+h1#withUs {
+    padding-right: 0;
     font-size: 6vw;
 }
 
