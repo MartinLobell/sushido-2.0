@@ -25,7 +25,7 @@ header  #logoImage {
     float: left;
 }
 
-header  #logoImage  img {
+header #logoImage img {
     height: 30px;
     padding: 20px;
     margin-left: 100px;
@@ -202,28 +202,32 @@ main {
     margin-right: 0;
 }
 
+.imgSection {
+    width: 50%;
+    height: 700px;
+}
+
 .textSection {
     width: 50%;
-    height: 70%;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
-.textSection  h1 {
+.textSection h1 {
     text-align: right;
     font-size: 10vw;
     font-weight: lighter;
     width: 40%;
     border-right: solid 10px #fff;
     line-height: 1;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5%;
+    margin: auto;
 }
 
 h1#withUs {
-    padding-right: 0;
     font-size: 6vw;
 }
 
@@ -255,8 +259,6 @@ h1#withUs {
 }
 
 #findSection .imgSection {
-    width: 50%;
-    height: 100%;
     background: url("images/nuts.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -271,7 +273,7 @@ h1#withUs {
     padding: 5%;
 }
 
-#findSection .textSection p {
+#findSection .textSection #openingHours p {
     font-size: 1vw;
     width: auto;
     margin: 10px;
@@ -284,7 +286,7 @@ h1#withUs {
     font-size: 1.5vw;
 }
 
-#findSection .textSection button {
+#findSection .textSection a {
     margin: 10px;
     padding: 10px;
     font-size: 1.5vw;
@@ -292,9 +294,12 @@ h1#withUs {
     border: none;
     background: #fff;
     border: solid 5px #fff;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
 }
 
-#findSection .textSection button:hover {
+#findSection .textSection a:hover {
     background: url('images/map.png');
 }
 
@@ -310,8 +315,6 @@ h1#withUs {
 }
 
 #followSection  .imgSection {
-    width: 50%;
-    height: 100%;
     background: url("images/tower.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -505,12 +508,13 @@ footer  #socialMedia {
     }
 
     #findSection .textSection #openingHours {
+        font-size: 1.5vw;
         display: flex;
         flex-direction: column;
         margin: auto;
     }
 
-    #findSection .textSection #openingHours p, #findSection .textSection #openingHours button {
+    #findSection .textSection #openingHours p, #findSection .textSection #openingHours a {
         width: 60%;
         margin: 5px;
         text-align: center;
@@ -533,7 +537,6 @@ footer  #socialMedia {
 
     h1#withUs {
         font-size: 10vw;
-        padding: 0;
     }
 
     footer {
@@ -566,8 +569,9 @@ footer  #socialMedia {
         font-size: 1.5vw;
     }
 
-    #findSection .textSection p {
+    #findSection .textSection #openingHours p {
         font-size: 0.75vw;
+        font-weight: lighter;
         width: auto;
         margin: 10px;
         padding: 10px;
