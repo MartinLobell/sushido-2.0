@@ -12,19 +12,20 @@ html, body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     background: #131313;
     width: 100%;
     height: 70px;
+    z-index: 1;
 }
 
-header > #logoImage {
+header  #logoImage {
     height: 100%;
     width: 20%;
     float: left;
 }
 
-header > #logoImage > img {
+header  #logoImage  img {
     height: 30px;
     padding: 20px;
     margin-left: 100px;
@@ -33,7 +34,7 @@ header > #logoImage > img {
 
     /* Menu */
 
-header > nav > ul {
+header  nav  ul {
     float: right;
     list-style-type: none;
     margin: 0;
@@ -41,12 +42,12 @@ header > nav > ul {
     margin-right: 100px;
 }
 
-header > nav > ul > li {
+header  nav  ul  li {
     height: 70px;
     display: inline-block;
 }
 
-header > nav > ul > li > a {
+header  nav  ul  li  a {
     display: block;
     font-size: 20px;
     color: #fff;
@@ -55,7 +56,7 @@ header > nav > ul > li > a {
     padding: 27px 16px 0;
 }
 
-header > nav > ul > li > a:hover {
+header  nav  ul  li  a:hover {
     transition: 0.6s;
     color: #808080;
 }
@@ -88,7 +89,7 @@ header > nav > ul > li > a:hover {
     float: right;
 }
 
-.dropdown-content {
+#dropdownContent {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -97,16 +98,17 @@ header > nav > ul > li > a:hover {
     z-index: 1;
     top: 70px;
     right: 30px;
+    text-align: center;
 }
 
-.dropdown-content a {
+#dropdownContent a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
+#dropdownContent a:hover {
     background-color: #f1f1f1
 }
 
@@ -157,25 +159,25 @@ main {
     display: flex;
 }
 
-.restaurants > a:hover  {
+.restaurants  a:hover  {
     transition: 0.6s;
     background: #fff;
     opacity: 0.5;
 }
 
-.restaurants > a:hover > h3 {
+.restaurants  a:hover  h3 {
     transition: 0.6s;
     color: #585858;
 }
 
-.restaurants > a {
+.restaurants  a {
     width: 100%;
     color: #fff;
     position: relative;
     text-decoration: none;
 }
 
-.restaurants > a > h3 {
+.restaurants  a  h3 {
     font-size: 5vw;
     font-weight: lighter;
     position: absolute;
@@ -190,7 +192,7 @@ main {
     justify-content: center;
 }
 
-#aboutSection > .imgSection {
+#aboutSection  .imgSection {
     width: 50%;
     height: 100%;
     background: url("images/vegpoke.png");
@@ -209,7 +211,7 @@ main {
     align-items: center;
 }
 
-.textSection > h1 {
+.textSection  h1 {
     text-align: right;
     font-size: 10vw;
     font-weight: lighter;
@@ -225,7 +227,7 @@ h1#withUs {
     font-size: 6vw;
 }
 
-.textSection > p {
+.textSection  p {
     font-size: 2vw;
     width: 40%;
     padding: 5%;
@@ -238,21 +240,21 @@ h1#withUs {
     background-size: cover;
 }
 
-.fullSection > .textSection {
+.fullSection .textSection {
     margin-right: 50%;
 }
 
-.mainSections.fullSection > .textSection > p {
+.mainSections.fullSection .textSection  p {
     text-align: right;        
 }
 
-.mainSections.fullSection > .textSection > h1 {
+.mainSections.fullSection .textSection  h1 {
     border-right: none;
     border-left: solid 10px #fff;
     text-align: left;
 }
 
-#findSection > .imgSection {
+#findSection .imgSection {
     width: 50%;
     height: 100%;
     background: url("images/nuts.jpg");
@@ -262,6 +264,44 @@ h1#withUs {
     margin-right: auto;
 }
 
+#findSection .textSection #openingHours {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+#findSection .textSection p {
+    font-size: 1vw;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    border: solid 10px #fff;
+    background: #000;
+}
+
+#findSection .textSection p strong {
+    font-size: 1.5vw;
+}
+
+#findSection .textSection button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5vw;
+    font-family: 'sushiFont', sans-serif;
+    border: none;
+    background: #fff;
+    border: solid 5px #fff;
+}
+
+#findSection .textSection button:hover {
+    background: url('images/map.png');
+}
+
+#openingHours {
+    display: flex;
+}
+
 .mainSections#companySection {
     background: url("images/bowls.png");
     background-position: center;
@@ -269,7 +309,7 @@ h1#withUs {
     background-size: cover;
 }
 
-#followSection > .imgSection {
+#followSection  .imgSection {
     width: 50%;
     height: 100%;
     background: url("images/tower.jpg");
@@ -280,7 +320,7 @@ h1#withUs {
     float: left;
 }
 
-#followSection > .textSection {
+#followSection  .textSection {
     float: right;
 }
 
@@ -294,7 +334,6 @@ h1#withUs {
     /* Footer */
 
 footer {
-    padding: 20px;
     width: 100%;
     background: #131313;
     display: flex;
@@ -302,13 +341,15 @@ footer {
     justify-items: center;
 }
 
-footer > #socialMedia {
+footer  #socialMedia {
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-items: center;
     justify-content: center;
 }
 
-#socialMedia > .fa {
+#socialMedia  .fa {
     padding: 20px;
     font-size: 30px;
     margin-left: 10px;
@@ -322,7 +363,7 @@ footer > #socialMedia {
     margin-bottom: auto;
 }
 
-#socialMedia > .fa:hover {
+#socialMedia  .fa:hover {
     transition: 0.6s;
     background: #131313;
     color: #fff;
@@ -339,16 +380,22 @@ footer > #socialMedia {
 }
 
 .footerSections {
-    width: 50%;
+    width: 33.33%;
 }
 
-.footerSections > p {
-    margin: 10px;
+.footerSections  p {
+    margin: 20px;
     color: #fff;
+    text-align: center;
 }
 
-.footerSections > p > strong {
+.footerSections  p  strong {
     font-size: 22px;
+}
+
+#copyright {
+    margin: auto;
+    margin-bottom: 0;
 }
 
 #contact {
@@ -357,12 +404,12 @@ footer > #socialMedia {
     color: #fff;
 }
 
-#contact > p > a {
+#contact  p  a {
     text-decoration: none;
     color: #fff;
 }
 
-#contact > p > a:hover {
+#contact  p  a:hover {
     transition: 0.6s;
     color: #808080;
 }
@@ -384,12 +431,18 @@ footer > #socialMedia {
         display: flex;
     }
 
-    header > #logoImage {
+    header  #logoImage {
         width: 50%;
     }
 
-    .fullSection > .textSection {
+    .mainSections.fullSection .textSection h1 {
+        text-align: center;
+    }
+
+    .fullSection .textSection {
         margin-right: 0;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     #restaurantSection {
@@ -399,16 +452,22 @@ footer > #socialMedia {
     .restaurants {
         width: 100%;
         height: 33.3%;
-        display: inline-block;
     }
 
-    .restaurants > a > h3 {
+    .restaurants a {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .restaurants a h3 {
         position: relative;
-        vertical-align: bottom;
         font-size: 10vw;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
-    #followSection > .imgSection, #aboutSection > .imgSection, #findSection > .imgSection {
+    #followSection  .imgSection, #aboutSection  .imgSection, #findSection  .imgSection {
         width: 100%;
     }
 
@@ -416,31 +475,107 @@ footer > #socialMedia {
         width: 100%;
         position: absolute;
         margin: 0;
+        display: flex;
+        flex-direction: column;
     }
 
-    #withUs {
+    br#bigBr {
+        display: none;
+    }
+
+    .textSection h1 {
+        border: 0;
+        margin: 0;
+        text-align: center;
+        width: 60%;
+        margin-right: 15%;
+        margin-left: 15%;
+        border-bottom: solid 10px #fff;
+    }
+
+    .textSection p, .mainSections.fullSection .textSection p {
+        width: 80%;
+        padding-right: 10%;
+        padding-left: 10%;
+        text-align: left;
+    }
+
+    .mainSections.fullSection .textSection h1 {
+        border-left: 0;
+    }
+
+    #findSection .textSection #openingHours {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #findSection .textSection #openingHours p, #findSection .textSection #openingHours button {
+        width: 60%;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .textSection  p {
+        font-size: 4vw;
+        margin: auto;
+        padding: 0;
+    }
+
+    #findSection .textSection #openingHours {
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60%;
+    }
+
+    h1#withUs {
         font-size: 10vw;
+        padding: 0;
     }
 
     footer {
         flex-direction: column;
-        padding: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
 
-    footer > .footerSections {
+    footer  .footerSections {
         width: 100%;
     }
 }
 
 @media (max-width: 440px) {
 
-    header > #logoImage > img {
+    header  #logoImage  img {
         margin-left: 0;
+    }
+
+    .textSection p {
+        font-size: 24px;
     }
 
     .dropbtn {
         margin-right: 0;
+    }
+}
+
+@media (min-width: 1620px) {
+
+    .textSection  p {
+        font-size: 1.5vw;
+    }
+
+    #findSection .textSection p {
+        font-size: 0.75vw;
+        width: auto;
+        margin: 10px;
+        padding: 10px;
+        border: solid 10px #fff;
+        background: #000;
+    }
+
+    #findSection .textSection p strong {
+        font-size: 1.25vw;
     }
 }

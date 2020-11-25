@@ -15,14 +15,17 @@ $(document).ready(function () {
 });
 
 function showLinks() {
-    var x = document.getElementsByClassName('dropdown-content');
-    if (x.style.display === "block") {
+    var x = document.getElementById('dropdownContent');
+    if (x.style.display === "block")
+    {
         x.style.display = "none";
-    } else {
+    }
+    else
+    {
         x.style.display = "block";
     }
 }
 
-function onLinkClick(clickedId) {
+function clickScroll(clickedId) {
     document.getElementsByClassName('mainSections')[clickedId].scrollIntoView();
 }
