@@ -327,6 +327,25 @@ h1#withUs {
     float: right;
 }
 
+#followSection .textSection .socialMedia {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#followSection .textSection h1 {
+    margin-right: 0;
+}
+
+
+#followSection .textSection .socialMedia a {
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    font-size: 50px;
+}
+
 .mainSections#workSection {
     background: url("images/spicytuna.png");
     background-position: center;
@@ -334,17 +353,31 @@ h1#withUs {
     background-size: cover;
 }
 
-    /* Footer */
-
-footer {
-    width: 100%;
-    background: #131313;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+.mainSections#workSection p  {
+    background: #000;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-footer  #socialMedia {
+.mainSections#workSection p a {
+    color: #fff;
+}
+
+.mainSections#workSection p a:hover {
+    transition: 0.6s;
+    color: #808080;
+}
+
+    /* Footer */
+    footer {
+        width: 100%;
+        background: #131313;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+footer  .socialMedia {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -352,7 +385,7 @@ footer  #socialMedia {
     justify-content: center;
 }
 
-#socialMedia  .fa {
+.socialMedia  .fa {
     padding: 20px;
     font-size: 30px;
     margin-left: 10px;
@@ -366,7 +399,7 @@ footer  #socialMedia {
     margin-bottom: auto;
 }
 
-#socialMedia  .fa:hover {
+.socialMedia  .fa:hover {
     transition: 0.6s;
     background: #131313;
     color: #fff;
