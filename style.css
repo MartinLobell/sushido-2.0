@@ -529,8 +529,7 @@ footer  .socialMedia {
         margin: 0;
         text-align: center;
         width: 60%;
-        margin-right: 15%;
-        margin-left: 15%;
+        margin: auto;
         border-bottom: solid 10px #fff;
     }
 
