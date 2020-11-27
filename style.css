@@ -192,7 +192,7 @@ main {
     justify-content: center;
 }
 
-#aboutSection  .imgSection {
+#cateringSection  .imgSection {
     width: 50%;
     height: 100%;
     background: url("images/vegpoke.png");
@@ -237,7 +237,7 @@ h1#withUs {
     padding: 5%;
 }
 
-.mainSections#cateringSection {
+.mainSections#aboutSection {
     background: url("images/food2.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -354,9 +354,10 @@ h1#withUs {
 }
 
 .mainSections#workSection p  {
-    background: #000;
+
     margin-left: 5%;
     margin-right: 5%;
+    text-shadow: 2px 2px #000;
 }
 
 .mainSections#workSection p a {
@@ -503,8 +504,12 @@ footer  .socialMedia {
         margin-bottom: auto;
     }
 
-    #followSection  .imgSection, #aboutSection  .imgSection, #findSection  .imgSection {
+    #followSection  .imgSection, #cateringSection  .imgSection, #findSection  .imgSection {
         width: 100%;
+    }
+
+    #followSection .textSection h1 {
+        margin-right: auto;
     }
 
     .textSection {
@@ -545,6 +550,10 @@ footer  .socialMedia {
         display: flex;
         flex-direction: column;
         margin: auto;
+    }
+
+    #findSection .textSection #openingHours p {
+        width: 100%;
     }
 
     #findSection .textSection #openingHours p, #findSection .textSection #openingHours a {

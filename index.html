@@ -18,10 +18,10 @@
         <nav>
             <ul>
                 <li><a id="0" href="#order" onclick="clickScroll(this.id)">BESTÄLL</a></li>
-                <li><a id="1" href="#about" onclick="clickScroll(this.id)">CATERING</a></li>
-                <li><a id="2" href="#about" onclick="clickScroll(this.id)">FÖRETAG</a></li>
-                <li><a id="3" href="#find" onclick="clickScroll(this.id)">OM OSS</a></li>
-                <li><a id="4" href="#about" onclick="clickScroll(this.id)">HITTA OSS</a></li>
+                <li><a id="1" href="#find" onclick="clickScroll(this.id)">OM OSS</a></li>
+                <li><a id="2" href="#about" onclick="clickScroll(this.id)">CATERING</a></li>
+                <li><a id="3" href="#about" onclick="clickScroll(this.id)">HITTA OSS</a></li>
+                <li><a id="4" href="#about" onclick="clickScroll(this.id)">FÖRETAG</a></li>
                 <li><a id="5" href="#about" onclick="clickScroll(this.id)">FÖLJ OSS</a></li>
                 <li><a id="6" href="#about" onclick="clickScroll(this.id)">JOBBA HOS OSS</a></li>
             </ul>
@@ -33,10 +33,10 @@
                 </button>
                 <div id="dropdownContent">
                     <a id="0" href="#order" onclick="clickScroll(this.id)">BESTÄLL</a>
-                    <a id="1" href="#about" onclick="clickScroll(this.id)">CATERING</a>
-                    <a id="2" href="#about" onclick="clickScroll(this.id)">FÖRETAG</a>
-                    <a id="3" href="#find" onclick="clickScroll(this.id)">OM OSS</a>
-                    <a id="4" href="#about" onclick="clickScroll(this.id)">HITTA OSS</a>
+                    <a id="1" href="#find" onclick="clickScroll(this.id)">OM OSS</a>
+                    <a id="2" href="#about" onclick="clickScroll(this.id)">CATERING</a>
+                    <a id="3" href="#about" onclick="clickScroll(this.id)">HITTA OSS</a>
+                    <a id="4" href="#about" onclick="clickScroll(this.id)">FÖRETAG</a>
                     <a id="5" href="#about" onclick="clickScroll(this.id)">FÖLJ OSS</a>
                     <a id="6" href="#about" onclick="clickScroll(this.id)">JOBBA HOS OSS</a>
                 </div>
@@ -61,35 +61,26 @@
                 </a>
             </div>
         </div>
-        <div class="mainSections fullSection centerContent" id="cateringSection">
-            <div class="textSection">
-                <p class="fadeIn">
-                    Vi har färdiga menyer som är anpassade för såväl små som stora sällskap, men vi ser alltid till att ordna speciallösningar efter era önskemål.
-                </p>
-                <h1 class="fadeIn">
+        <div class="mainSections centerContent" id="cateringSection">
+            <div class="imgSection"></div>
+            <div class="textSection fadeIn">
+                <h1>
                     CATE<br id="bigBr" />RING
                 </h1>
+
+                <p>
+                    Vi har färdiga menyer som är anpassade för såväl små som stora sällskap, men vi ser alltid till att ordna speciallösningar efter era önskemål.
+                </p>
             </div>
         </div>
         <div class="mainSections fullSection centerContent" id="companySection">
-            <div class="textSection">
-                <p class="fadeIn">
+            <div class="textSection fadeIn">
+                <p>
                     Har ni ett företag kan ni beställa mat från oss och betala på faktura. Skicka en ansökan med företagsnamn, org.nr och alla kontaktuppgifter.  Vi levererar ofta till konferenser, möten och andra företagsarrangemang.
                 </p>
-                <h1 class="fadeIn">
+                <h1>
                     FÖRE<br id="bigBr" />TAG
                 </h1>
-            </div>
-        </div>
-        <div class="mainSections centerContent" id="aboutSection">
-            <div class="imgSection"></div>
-            <div class="textSection">
-                <h1 class="fadeIn">OM<br id="bigBr" /> OSS</h1>
-                <p class="fadeIn">
-                    Sushido har funnits sedan 2005 och har tre restauranger i Malmö.
-                    Vår ambition har alltid varit att serva våra kunder med fräsch mat, gjord på de bästa råvarorna samt leverera snabb service och till bra priser.
-                    Vi jobbar ständigt med att minska miljöpåverkan och har som exempel svenskproducerade sushiemballage av 100% svenskt material.
-                </p>
             </div>
         </div>
         <div class="mainSections centerContent" id="findSection">
@@ -128,6 +119,18 @@
                 </div>
             </div>
         </div>
+        <div class="mainSections fullSection centerContent" id="aboutSection">
+            <div class="textSection fadeIn">
+                <p>
+                    Sushido har funnits sedan 2005 och har tre restauranger i Malmö.
+                    Vår ambition har alltid varit att serva våra kunder med fräsch mat, gjord på de bästa råvarorna samt leverera snabb service och till bra priser.
+                    Vi jobbar ständigt med att minska miljöpåverkan och har som exempel svenskproducerade sushiemballage av 100% svenskt material.
+                </p>
+                <h1>
+                    OM<br id="bigBr" /> OSS
+                </h1>
+            </div>
+        </div>
         <div class="mainSections centerContent" id="followSection">
             <div class="imgSection"></div>
             <div class="textSection fadeIn">
@@ -139,18 +142,17 @@
             </div>
         </div>
         <div class="mainSections fullSection centerContent" id="workSection">
-            <div class="textSection">
-                <p class="fadeIn">
+            <div class="textSection fadeIn">
+                <p>
                     Vi söker alltid efter nästa stjärna i köket eller ute bland kunderna. Skicka ansökan med cv så återkommer vi när en öppning kommer. Erfarenhet av branschen är ett plus, men främst är det din personlighet och engagemang som är avgörande.<br /><br />Skicka ansökan till <a href="mailto:kontakt@sushido.se">kontakt@sushido.se</a>
                 </p>
-                <h1 class="fadeIn" id="withUs">
+                <h1 id="withUs">
                     JOBBA<br id="bigBr" />
                     HOS OSS
                 </h1>
             </div>
         </div>
     </main>
-
     <footer>
         <div class="footerSections socialMedia">
             <a href="https://www.facebook.com/SUSHIDOMALMO" class="fa fa-facebook" target="_blank"></a>
