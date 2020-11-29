@@ -1,5 +1,5 @@
-// Hittad funktion nedan, "Fade-in-vid-scroll-animation"
 
+// Found jQuery-function, "Fade-in-with-scroll-animation".
 $(document).ready(function () {
     $(window).scroll(function () {
         $('.fadeIn').each(function (i) {
@@ -7,13 +7,15 @@ $(document).ready(function () {
             var bottom_of_object = $(this).position().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-            if (bottom_of_window > bottom_of_object) {
+            if (bottom_of_window > bottom_of_object)
+            {
                 $(this).animate({ 'opacity': '1' }, 500);
             }
         });
     });
 });
 
+// Toggle between showing hamburger menu content.
 function showLinks() {
     var x = document.getElementById('dropdownContent');
     if (x.style.display === "block")
@@ -26,6 +28,7 @@ function showLinks() {
     }
 }
 
+// Go to associated section when clicking menu item.
 function clickScroll(clickedId) {
     document.getElementsByClassName('mainSections')[clickedId].scrollIntoView();
 }
