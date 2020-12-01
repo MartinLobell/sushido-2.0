@@ -172,6 +172,12 @@ main {
     padding: 5%;
 }
 
+.fullSection {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .fullSection .textSection {
     margin-right: 50%;
 }
@@ -249,15 +255,6 @@ main {
     margin-right: 0;
 }
 
-    /* Company section */
-
-.mainSections#companySection {
-    background: url("images/bowls.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
     /* Find us section */
 
 #findSection .imgSection {
@@ -308,15 +305,6 @@ main {
 #openingHours {
     display: flex;
 }
-    
-    /* About section */
-
-.mainSections#aboutSection {
-    background: url("images/food2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
     /* Follow section */
 
@@ -349,15 +337,6 @@ main {
     height: 50px;
     padding: 25px;
     font-size: 50px;
-}
-
-    /* Work section */
-
-.mainSections#workSection {
-    background: url("images/spicytuna.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .mainSections#workSection p  {
