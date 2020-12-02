@@ -146,6 +146,10 @@ main {
     height: 700px;
 }
 
+p {
+    text-shadow: 2px 2px #000;
+}
+
 .textSection {
     width: 50%;
     height: 700px;
@@ -195,10 +199,10 @@ main {
     /* Restaurant section */
 
 #restaurantSection {
+    background: url("images/restaurantsImg.png");
     width: 100%;
     display: flex;
     flex-direction: row;
-    background: url("images/food.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -248,17 +252,26 @@ main {
 #cateringSection .imgSection {
     width: 50%;
     height: 100%;
-    background: url("images/vegpoke.png");
+    background: url("images/cateringImg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 0;
 }
 
+    /* Company section */
+
+#companySection {
+    background: url('images/companyImg.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
     /* Find us section */
 
 #findSection .imgSection {
-    background: url("images/nuts.jpg");
+    background: url("images/findUsImg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -285,7 +298,7 @@ main {
     font-size: 1.5vw;
 }
 
-#findSection .textSection a {
+.mapLink {
     margin: 10px;
     padding: 10px;
     font-size: 1.5vw;
@@ -298,6 +311,33 @@ main {
     color: #000;
 }
 
+
+
+.mapLink span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.mapLink span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.mapLink:hover span {
+    padding-right: 25px;
+}
+
+.mapLink:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+            
 #findSection .textSection a:hover {
     background: url('images/map.png');
 }
@@ -306,10 +346,19 @@ main {
     display: flex;
 }
 
+    /* About section */
+
+#aboutSection {
+    background: url('images/aboutImg.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
     /* Follow section */
 
 #followSection  .imgSection {
-    background: url("images/tower.jpg");
+    background: url("images/followImg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -339,17 +388,25 @@ main {
     font-size: 50px;
 }
 
-.mainSections#workSection p  {
-    margin-left: 5%;
-    margin-right: 5%;
-    text-shadow: 2px 2px #000;
+    /* Work section */
+
+#workSection {
+    background: url('images/workImg.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
-.mainSections#workSection p a {
+#workSection p  {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#workSection p a {
     color: #fff;
 }
 
-.mainSections#workSection p a:hover {
+#workSection p a:hover {
     transition: 0.6s;
     color: #808080;
 }
@@ -472,6 +529,10 @@ footer  .socialMedia {
         text-align: center;
     }
 
+    p {
+        text-shadow: none;
+    }
+
     .fullSection .textSection {
         margin-right: 0;
         display: flex;
@@ -550,7 +611,6 @@ footer  .socialMedia {
     }
 
     #findSection .textSection #openingHours {
-        font-size: 1.5vw;
         display: flex;
         flex-direction: column;
         margin: auto;
@@ -558,6 +618,7 @@ footer  .socialMedia {
     }
 
     #findSection .textSection #openingHours p {
+        font-size: 1vw;
         width: 100%;
     }
 
@@ -599,6 +660,11 @@ footer  .socialMedia {
 
     .textSection p {
         font-size: 24px;
+    }
+
+    #findSection .textSection #openingHours p, #findSection .textSection #openingHours a, #findSection .textSection #openingHours p strong {
+        font-size: 2.5vw;
+        width: 100%;
     }
 
     .dropbtn {
