@@ -59,6 +59,7 @@ header  nav  ul  li  a {
 header  nav  ul  li  a:hover {
     transition: 0.6s;
     color: #808080;
+    transform: scale(1.1);
 }
 
     /* Hamburger menu start */
@@ -135,10 +136,6 @@ main {
     font-size: 40px;
     text-align: center;
     margin-bottom: 0;
-}
-
-.fadeIn {
-    opacity: 0;
 }
 
 .imgSection {
@@ -290,8 +287,15 @@ p {
     width: auto;
     margin: 10px;
     padding: 10px;
-    border: solid 10px #fff;
+    border: solid 5px #fff;
     background: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#findSection .textSection #openingHours p strong {
+    text-align: center;
 }
 
 #findSection .textSection p strong {
@@ -303,7 +307,6 @@ p {
     padding: 10px;
     font-size: 1.5vw;
     font-family: 'sushiFont', sans-serif;
-    border: none;
     background: #fff;
     border: solid 5px #fff;
     text-align: center;
@@ -425,12 +428,24 @@ footer {
     justify-items: center;
 }
 
-footer  .socialMedia {
+footer .store {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    align-content: center;
+}
+
+footer .store a, footer .store a img {
+    max-width: 200px;
+    margin: auto;
+}
+
+footer .store a img:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
 }
 
 .socialMedia  .fa {
@@ -499,7 +514,15 @@ footer  .socialMedia {
 }
 
     /* Footer end */
-    
+
+    /* Only for desktop screens and bigger */
+
+@media (min-width: 993px) {
+    .fadeIn {
+        opacity: 0;
+    }
+}
+
     /* Applied to screens smaller than desktop screens */
 
 @media (max-width: 1130px) {
@@ -628,6 +651,10 @@ footer  .socialMedia {
         text-align: center;
     }
 
+    #findSection .textSection #openingHours p {
+        text-align: left;
+    }
+
     #findSection .textSection #openingHours {
         justify-content: center;
         align-items: center;
@@ -685,8 +712,6 @@ footer  .socialMedia {
         font-weight: lighter;
         width: auto;
         margin: 10px;
-        padding: 10px;
-        border: solid 10px #fff;
         background: #000;
     }
 
